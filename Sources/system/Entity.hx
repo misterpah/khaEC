@@ -27,7 +27,7 @@ class Entity{
             return true;
         }
 
-        trace("Component already exists");
+        trace("Component already exists :"+Component.name);
         return false;
     }
 
