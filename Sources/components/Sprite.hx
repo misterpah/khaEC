@@ -11,12 +11,16 @@ class Sprite extends Component{
 	var r:Bool;
 	var u:Bool;
 	var d:Bool;
+	var w:Float;
+	var h:Float;
 	override public function new(_x:Float,_y:Float,_image:Image){
 		super();
 		this.name = "Sprite";
 		this.x = _x;
 		this.y = _y;
 		this.image = _image;
+		this.w = this.image.width;
+		this.h = this.image.height;
 		l = r = u = d = false;
 	}
 

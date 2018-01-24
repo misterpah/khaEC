@@ -3,6 +3,7 @@ import system.Entity;
 import components.Health;
 import components.Sprite;
 import components.Movement;
+import components.Collision;
 import kha.Assets;
 
 class Player extends Entity{
@@ -15,7 +16,16 @@ class Player extends Entity{
 		addComponent(new Health());
 		addComponent(new Movement());
 		addComponent(new Sprite(x,y,Assets.images.logo));
+		addComponent(new Collision(this));
+		
 	}
+	public function tile_collision(obj:Entity){
+		var touch = getComponent("Collision").is_touching(obj);
+		if (touch == true){
+			trace("Is Touching!");
+		}
+	}
+
 	override public function update(){
 		super.update();
 		this.x = getComponent("Sprite").x;
