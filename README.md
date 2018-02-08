@@ -1,18 +1,19 @@
 # Kha-EC
-A Entity - Component for Haxe Kha.
+A Entity - Component System for Haxe Kha.
 
 ### How To Use
-1. Clone this repo
-2. Run on Kode Studio
-
-Try as much to utilize Entity & Component concept.
+1. Clone / Download this repo
+2. Extract in Libraries folder
+3. add this code in khafile.js
+```
+project.addLibrary("khaEC");
+```
 
 ### Contributor
 Any contribution are welcomed. 
 
 ### Todo
 1. Tutorial
-2. More Component
 
 ## Licence
 MIT
