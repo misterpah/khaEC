@@ -9,7 +9,7 @@ class Component{
 
 	public function update(){
 	}
-
+	public function get(key:String){return 0;}
 	public function set(key:String, value:Dynamic){
 	}
 	public function render(g:Graphics){
