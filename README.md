@@ -1,4 +1,4 @@
-# Kha-EC
+# KhaEC
 A Entity - Component System for Haxe Kha.
 
 ### How To Use
